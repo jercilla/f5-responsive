@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { background: hsl(0, 0%, 90%); }
+        img { width: 100%; }
+
+        .card {
+            background: white;
+            margin-bottom: 2em;	
+            border:2px solid #567;
+        }
+
+        .card-content {
+            padding: 1.4em;
+        }
+
+        .cards {
+           display: flex;
+        }
+
+        .cards {
+            gap: 12px;
+            flex-wrap:wrap;
+            justify-content: flex-start; /* cambiar a quitarlo */
+        }
+        .card {
+            width: 14em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox Demo: Card Layouts</h1>
+    </header>
+    
+    <main>
+        <section class="cards">
+                
+            <article class="card">
+                <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-01.jpg" alt="A banana that looks like a bird">
+                <div class="card-content">
+                    <h2>Vacation Image 01</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-02.jpg" alt="Norwegian boller">
+                <div class="card-content">
+                    <h2>Vacation Image 02</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-03.jpg" alt="A dinosaur wearing an aluminium jacket">
+                <div class="card-content">
+                    <h2>Vacation Image 03</h2>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="http://www.abbeyjfitzgerald.com/wp-content/uploads/2017/02/image-example-04.jpg" alt="Chocolate filled boller">
+                <div class="card-content">
+                    <h2>Vacation Image 04</h2>
+                </div>
+            </article>
+
+        </section>
+        
+    </main>
+</body>
+</html>

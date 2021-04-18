@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Hamburger Menu</title>
+    <style>
+      nav {
+        width: 100%;
+        background: #000;
+        color: #fff;
+        position: sticky;
+        top: 0;
+      }
+      
+      #nav-items {
+        display:flex;
+      }
+      
+      #nav-items a {
+        width: 20%;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      #nav-items a:hover {
+        color:orange;
+      }
+      
+      #hamburger, #hamburger-input {
+        display: none;
+      }
+      
+      @media screen and (max-width:768px) {
+        #nav-items{
+          display: none;
+        }
+        #nav-items a {
+          display: block;
+          width: 100%;
+        }
+        #hamburger {
+          display: inline-block;
+          padding: 4px;
+          font-size: 125%;
+          font-weight: bold;
+          cursor:pointer;
+        }
+        nav input:checked ~ #nav-items {
+          display:block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <label for="hamburger-input" id="hamburger">☰</label>
+      <input type="checkbox" id="hamburger-input"/>
+      <div id="nav-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tech.html">Tech</a>
+        <a href="games.html">Games</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
+    </nav>
+  </body>
+</html>

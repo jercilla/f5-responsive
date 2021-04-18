@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;;
+            justify-content: center;
+            align-items: center;
+            grid-row: 1fr;
+            box-sizing: border-box;
+        }
+        
+        /*
+        * {
+            box-sizing: border-box;
+        }
+        */
+
+        .box {
+            text-align:center;
+            white-space: pre-line;
+            padding: 0px 50px;
+            margin: 20px;
+            width: 500px;
+            border: 40px solid blanchedalmond;
+            outline: 1px solid black;
+            outline-offset: 20px;
+
+        }
+        .border-box {
+            box-sizing: border-box;
+        }
+        .ruler {display: flex; margin:2rem 0;}
+        .ruler-item {
+            box-sizing:border-box;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-bottom: none;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Box sizing demo</h1>
+
+    <div class="box">
+        box-sizing: content-box(default)
+        padding: 50px;
+        margin: 20px;
+        border: 40px;
+
+        width: 500px;
+
+    </div>
+    
+    <div class="ruler">
+        <div class="ruler-item" style="width:20px">20</div>
+        <div class="ruler-item" style="width:40px">40</div>
+        <div class="ruler-item" style="width:50px">50</div>
+        <div class="ruler-item" style="width:500px">500</div>
+        <div class="ruler-item" style="width:50px">50</div>
+        <div class="ruler-item" style="width:40px">40</div>
+        <div class="ruler-item" style="width:20px">20</div>
+    </div>
+    
+    <div class="box border-box">
+        box-sizing: border-box
+        padding: 50px;
+        margin: 20px;
+        border: 40px;
+
+        width: 500px;
+
+    </div>
+    
+</body>
+</html>
